@@ -193,6 +193,8 @@ class Nxbt():
         self.controllers.daemon = False
         self.controllers.start()
 
+        toggle_clean_bluez(False)
+
     def _on_exit(self):
         """The exit handler function used with the atexit module.
         This function attempts to gracefully exit by terminating
